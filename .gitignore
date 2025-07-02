@@ -1,0 +1,26 @@
+# ⛔ Secret keys
+.env
+
+# 🧠 Python bytecode & cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# 🔁 Virtual environment
+venv/
+ENV/
+env/
+
+# 🛠️ Eclipse / PyDev / IDE files
+.project
+.pydevproject
+.settings/
+.vscode/
+
+# 🚫 OS-generated files
+.DS_Store
+Thumbs.db
+
+# 📦 Package metadata
+*.egg-info/
