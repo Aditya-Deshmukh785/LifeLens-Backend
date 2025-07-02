@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: lifelens-backend
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn lifelens_ai_api:app
+    autoDeploy: true
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
