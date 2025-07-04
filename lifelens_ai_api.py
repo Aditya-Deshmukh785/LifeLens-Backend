@@ -270,7 +270,12 @@ User Input:
         print("❌ Symptom Error:")
         traceback.print_exc()
         return jsonify({"error": str(e)}), 500
-
+    
+    
+@app.route("/", methods=["GET"])
+def health_check():
+ return "✅ Flask backend is running", 200
+     
 if __name__ == "__main__":
     print("🚀 Combined Gemini Flask server running at http://localhost:5000")
     app.run(debug=True, port=5000)
